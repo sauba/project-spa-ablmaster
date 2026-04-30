@@ -30,77 +30,96 @@ module.exports = {
         'Shadows-into-light-two': ["Shadows Into Light Two", 'cursive'],
         'zeyada': ['Zeyada', 'cursive']
       },
+
       animation: {
         'spin-slow': 'spin 15s linear infinite',
         'ping-slow': 'ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite',
         'ping-fast': 'ping 0.75s cubic-bezier(0, 0, 0.2, 1) infinite',
         'bounce-slow': 'bounce 2s infinite ease-in-out',
         'bounce-personal': 'bounce 0.5s cubic-bezier(.07,.93,.93,.06) infinite',
+
         'wiggle': 'wiggle 1s ease-in-out infinite',
         'wiggle-stop': 'wiggle 3s ease-in-out',
+
         'wiggle-shrink': 'wiggle-shrink 6s ease-in-out infinite',
         'wiggle-shrink-slow': 'wiggle-shrink 9s ease-in-out infinite',
+
         'surf': 'surf 5s ease-in-out infinite',
         'surf-snap-left': 'surf-snap-left 2s ease-in-out infinite',
         'surf-snap-right': 'surf-snap-right 2s ease-in-out infinite',
         'surf-skew': 'surf-skew 3s ease-in-out infinite',
         'surf-inverted': 'surf-inverted 6s ease-in-out infinite',
+
         'skew': 'skew 5s ease-in-out infinite',
         'skew-stop': 'skew 0.5s ease-in-out',
         'skew-complete': 'skew-complete 2s ease-in-out infinite',
-        'pulse-slow': 'pulse 200s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'pulse-slow-stop': 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1)',
+
+        // 🔧 corrigido
+        'pulse-slow': 'pulse-custom 200s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-slow-stop': 'pulse-custom 5s cubic-bezier(0.4, 0, 0.6, 1)',
       },
+
       keyframes: {
-        'pulse': {
+        // 🔧 corrigido (não sobrescreve o padrão)
+        'pulse-custom': {
           '0%, 100%': { opacity: 1 },
-          '50%': { opacity: .5}
+          '50%': { opacity: 0.5 }
         },
+
         'wiggle': {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
         },
+
         'wiggle-shrink': {
           '0%, 100%': { transform: 'rotateY(-90deg)' },
           '50%': { transform: 'rotateY(90deg)' },
         },
+
         'surf': {
-          '0%, 100%': { transform: 'rotate(-180deg)'},
-          '50%': { transform: 'rotate(360deg)' },
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
+
         'surf-snap-left': {
-          '0%, 100%': { transform: 'rotate(-90deg)'},
+          '0%, 100%': { transform: 'rotate(-90deg)' },
           '50%': { transform: 'rotate(90deg)' },
-        }
-        ,
-        'surf-snap-right': {
-          '0%, 100%': { transform: 'rotate(0deg)', opacity: 1},
-          '50%': { transform: 'rotate(-3deg)', opacity: .5 },
         },
+
+        'surf-snap-right': {
+          '0%, 100%': { transform: 'rotate(0deg)', opacity: 1 },
+          '50%': { transform: 'rotate(-3deg)', opacity: 0.5 },
+        },
+
         'surf-inverted': {
           '0%, 100%': { transform: 'rotateY(-360deg)' },
           '50%': { transform: 'rotateY(360deg)' },
         },
+
         'surf-skew': {
           '0%, 100%': { transform: 'skewY(-15deg)' },
           '50%': { transform: 'skewY(15deg)' },
         },
+
         'skew': {
           '0%, 100%': { transform: 'skew(-3deg)' },
           '50%': { transform: 'skew(180deg)' },
         },
+
         'skew-complete': {
           '0%, 100%': { transform: 'skewY(-360deg)' },
           '50%': { transform: 'skewY(15deg)' }
         }
       },
+
       backgroundImage: {
-        'quem-somos': "url('https://drive.google.com/file/d/15T9_zkVrTxUl3aUZbw-IbuWUvp7adUUO/view?usp=sharing')",
+        'quem-somos': "url('/bgquem-somos.svg')", // ⚠️ evite Google Drive direto
         'contato': "url('/bgcontato.svg')",
         'missao': "url('/bgmissao.svg')",
         'afiliados': "url('/bgafiliados.svg')",
         'circuito-2026': "url('/bgcircuito2026.svg')"
       },
+
       screens: {
         'xs': '475px',
         '3xl': '2048px',
