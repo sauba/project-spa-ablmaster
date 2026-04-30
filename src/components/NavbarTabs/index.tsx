@@ -1,8 +1,6 @@
 'use client'
 import { Tab } from '@headlessui/react'
 import { Fragment } from 'react'
-import PsicoterapiaCasal from '../PsicoterapiaCasal'
-import PsicoterapiaIndividual from '../PsicoterapiaIndividual'
 
 export default function NavbarTabs() {
   return (
@@ -36,8 +34,8 @@ export default function NavbarTabs() {
           </Tab>
         </Tab.List>
         <Tab.Panels className={`w-full`}>
-          <Tab.Panel className={``}><PsicoterapiaIndividual /></Tab.Panel>
-          <Tab.Panel className={``}><PsicoterapiaCasal /></Tab.Panel>
+          <Tab.Panel className={``}></Tab.Panel>
+          <Tab.Panel className={``}></Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
     </div>
