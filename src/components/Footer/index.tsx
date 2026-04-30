@@ -9,14 +9,16 @@ import Logo from "../Logo"
 export default function Footer() {
   return (
     <footer
-      className={`w-full bg-black justify-center items-center text-center min-h-screen`}
+      className={`w-full bg-contato justify-center items-center text-center min-h-screen`}
       id="contato"
     >
       <div
         className={`flex w-full justify-center items-center text-center text-red-50 min-h-screen gap-10`}
       >
         <div className={`flex flex-col mt-4 font-pt-mono hover:cursor-none`}>
-          <Logo />
+          <span className={`w-6/12 mx-auto`}>
+            <Logo />
+          </span>
 
           <span
             className={`pt-8 pb-4 text-md text-zinc-50 tracking-widest flex-wrap`}

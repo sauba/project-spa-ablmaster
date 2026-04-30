@@ -95,7 +95,7 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'quem-somos': "url('/bgquemsomos.svg')",
+        'quem-somos': "url('https://drive.google.com/file/d/15T9_zkVrTxUl3aUZbw-IbuWUvp7adUUO/view?usp=sharing')",
         'contato': "url('/bgcontato.svg')",
         'missao': "url('/bgmissao.svg')",
         'afiliados': "url('/bgafiliados.svg')",
