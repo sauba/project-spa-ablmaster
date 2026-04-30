@@ -16,9 +16,7 @@ export default function UnderConstruction() {
       `}
       id="under-construction"
     >
-      <span className={`animate-surf transform-gpu`}>
-        <Image src={site_em_construcao} alt="" className={`w-6/12 lg:w-2/12 mx-auto animate-surf`} priority />
-      </span>
+      <Image src={site_em_construcao} alt="" className={`w-6/12 lg:w-2/12 mx-auto`} priority />
 
       <p
         className={`
