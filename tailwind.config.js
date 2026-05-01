@@ -113,11 +113,11 @@ module.exports = {
       },
 
       backgroundImage: {
-        'quem-somos': "url('/bgquem-somos.svg')", // ⚠️ evite Google Drive direto
-        'contato': "url('/bgcontato.svg')",
-        'missao': "url('/bgmissao.svg')",
-        'afiliados': "url('/bgafiliados.svg')",
-        'circuito-2026': "url('/bgcircuito2026.svg')"
+        'abertura-filiados': "url('/bg_abertura_filiados.svg')",
+        'contato': "url('/bg_contato.svg')",
+        'missao': "url('/bg_missao.svg')",
+        'quem-somos': "url('/bg_quem_somos.svg')",
+        'circuito-2026': "url('/bg_circuito_2026.svg')"
       },
 
       screens: {

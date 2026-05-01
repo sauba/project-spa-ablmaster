@@ -6,6 +6,7 @@ export function Filiados() {
   return (
     <div
       className={`
+        bg-abertura-filiados
         w-full
         min-h-screen
         flex
@@ -15,7 +16,6 @@ export function Filiados() {
         items-center
       text-gray-50
         font-pt-mono
-        bg-blue-900
       `}
       id="filiados"
     >
@@ -50,67 +50,68 @@ export function Filiados() {
         </span>
       </div>
 
-      <table className="w-full table-auto text-center">
-        <thead className="bg-zinc-300 text-zinc-900">
-          <tr>
-            <th className="py-1">Nome</th>
-            <th className="py-1">Status</th>
-            <th className="py-1">Categoria</th>
-            <th className="py-1">Tipo de Sócio</th>
-            <th className="py-1">Validade</th>
-          </tr>
-        </thead>
-        <tbody className="">
-          <tr>
-            <td className="py-1">Gui Mesquita</td>
-            <td className="py-1">ATLETA</td>
-            <td className="py-1">+60</td>
-            <td className="py-1">Sócio Pioneiro</td>
-            <td className="py-1">12/2026</td>
-          </tr>
+      <div className={`w-full mx-2`}>
+        <table className="table-auto text-center">
+          <thead className="bg-zinc-300 text-zinc-900">
+            <tr>
+              <th className="py-1">Nome</th>
+              <th className="py-1">Status</th>
+              <th className="py-1">Categoria</th>
+              <th className="py-1">Tipo de Sócio</th>
+              <th className="py-1">Validade</th>
+            </tr>
+          </thead>
+          <tbody className="">
+            <tr>
+              <td className="py-1">Gui Mesquita</td>
+              <td className="py-1">ATLETA</td>
+              <td className="py-1">+60</td>
+              <td className="py-1">Pioneiro</td>
+              <td className="py-1">12/2026</td>
+            </tr>
 
-          <tr>
-            <td className="py-1">Djan Madruga</td>
-            <td className="py-1">ATLETA</td>
-            <td className="py-1">+60</td>
-            <td className="py-1">Sócio Benemérito</td>
-            <td className="py-1">12/2026</td>
-          </tr>
+            <tr>
+              <td className="py-1">Djan Madruga</td>
+              <td className="py-1">ATLETA</td>
+              <td className="py-1">+60</td>
+              <td className="py-1">Benemérito</td>
+              <td className="py-1">12/2026</td>
+            </tr>
 
-          <tr>
-            <td className="py-1">Adolfo Jordão</td>
-            <td className="py-1">DIRETOR</td>
-            <td className="py-1">--</td>
-            <td className="py-1">Sócio Honorário</td>
-            <td className="py-1">12/2026</td>
-          </tr>
+            <tr>
+              <td className="py-1">Adolfo Jordão</td>
+              <td className="py-1">DIRETOR</td>
+              <td className="py-1">--</td>
+              <td className="py-1">Honorário</td>
+              <td className="py-1">12/2026</td>
+            </tr>
 
-          <tr>
-            <td className="py-1">Ricardo Phebo</td>
-            <td className="py-1">ATLETA</td>
-            <td className="py-1">+65</td>
-            <td className="py-1">Sócio Efetivo</td>
-            <td className="py-1">12/2026</td>
-          </tr>
+            <tr>
+              <td className="py-1">Ricardo Phebo</td>
+              <td className="py-1">ATLETA</td>
+              <td className="py-1">+65</td>
+              <td className="py-1">Efetivo</td>
+              <td className="py-1">12/2026</td>
+            </tr>
 
-          <tr>
-            <td className="py-1">Mauricio Raul De La Fuente</td>
-            <td className="py-1">ATLETA</td>
-            <td className="py-1">+60</td>
-            <td className="py-1">Sócio Fundador</td>
-            <td className="py-1">12/2026</td>
-          </tr>
+            <tr>
+              <td className="py-1">Mauricio Raul De La Fuente</td>
+              <td className="py-1">ATLETA</td>
+              <td className="py-1">+60</td>
+              <td className="py-1">Fundador</td>
+              <td className="py-1">12/2026</td>
+            </tr>
 
-          <tr>
-            <td className="py-1">XYWZ XYWZY</td>
-            <td className="py-1">PARATLETA</td>
-            <td className="py-1">+35</td>
-            <td className="py-1">Sócio Adaptado</td>
-            <td className="py-1">12/2026</td>
-          </tr>
-        </tbody>
-      </table>
-
+            <tr>
+              <td className="py-1">XYWZ XYWZY</td>
+              <td className="py-1">PARATLETA</td>
+              <td className="py-1">+35</td>
+              <td className="py-1">Adaptado</td>
+              <td className="py-1">12/2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }

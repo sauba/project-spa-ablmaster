@@ -1,5 +1,5 @@
 import Image from "next/image"
-import missaoBanner from "../../../public/missao.png"
+import missaoBanner from "../../../public/bg_missao.svg"
 
 export default function Missao() {
   return (

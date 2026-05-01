@@ -11,7 +11,7 @@ export default function NavbarDropdownMenu() {
             <Menu.Button className="inline-flex justify-items-start rounded-md text-red-50 border-none outline-none">
               <ListBullets
                 size={72}
-                weight="fill"
+                weight="thin"
                 color="white"
                 className={`py-4`}
               />

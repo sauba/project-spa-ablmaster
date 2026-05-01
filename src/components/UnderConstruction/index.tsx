@@ -5,6 +5,9 @@ export default function UnderConstruction() {
   return (
     <div
       className={`
+        bg-
+        bg-cover
+        bg-center
         w-full
         min-h-screen
         flex

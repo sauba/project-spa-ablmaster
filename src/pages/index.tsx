@@ -1,6 +1,8 @@
 import About from "@/components/About"
+import { Filiados } from "@/components/Filiados"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
+import Missao from "@/components/Missao"
 import UnderConstruction from "@/components/UnderConstruction"
 import { Metadata } from "next"
 
@@ -19,12 +21,13 @@ export default function Home() {
       min-h-screen
       items-center
       justify-center
-      bg-zinc-950
       `}
     >
       <Header />
       <UnderConstruction />
       <About />
+      <Missao />
+      <Filiados />
       <Footer />
     </main>
   )

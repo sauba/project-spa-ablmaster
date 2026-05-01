@@ -1,11 +1,10 @@
+import Image from "next/image";
+import bgquemsomos from "../../../public/bg_quem_somos.svg";
 
 export default function About() {
   return (
     <div
-      className={`
-        bg-quem-somos
-        bg-cover
-        bg-center
+      className={`        
         w-full
         flex
         justify-center
@@ -15,6 +14,10 @@ export default function About() {
       `}
       id="about"
     >
+      <div className={`w-full min-h-screen`}>
+        <Image src={bgquemsomos} alt="" className={`position:absolute top-0 left-0 w-full min-h-screen`} />
+
+      </div>
     </div>
   )
 }
