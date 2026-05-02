@@ -113,11 +113,11 @@ module.exports = {
       },
 
       backgroundImage: {
-        'abertura-filiados': "url('/bg_abertura_filiados.svg')",
-        'contato': "url('/bg_contato.svg')",
-        'missao': "url('/bg_missao.svg')",
-        'quem-somos': "url('/bg_quem_somos.svg')",
-        'circuito-2026': "url('/bg_circuito_2026.svg')"
+        'bg-abertura-filiados': "url('/bg_abertura_filiados.svg')",
+        'bg-contato': "url('/bg_contato.svg')",
+        'bg-missao': "url('/bg_missao.svg')",
+        'bg-quem-somos': "url('/bg_quem_somos.svg')",
+        'bg-circuito-2026': "url('/bg_circuito_2026.svg')"
       },
 
       screens: {
