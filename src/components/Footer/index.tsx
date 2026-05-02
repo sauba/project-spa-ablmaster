@@ -1,7 +1,6 @@
 import {
   InstagramLogo,
   TrademarkRegistered,
-  WhatsappLogo
 } from "@phosphor-icons/react"
 import Link from "next/link"
 import Logo from "../Logo"
@@ -51,7 +50,7 @@ export default function Footer() {
               </span>
             </div>
 
-            <div className={`animate-wiggle`}>
+            {/* <div className={`animate-wiggle`}>
               <span className={`text-green-600`}>
                 <Link
                   href="https://wa.me/5581985998673"
@@ -61,7 +60,7 @@ export default function Footer() {
                   <WhatsappLogo size={48} />
                 </Link>
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
