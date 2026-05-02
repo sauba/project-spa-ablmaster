@@ -11,6 +11,7 @@ export default function About() {
         w-full
         min-h-screen
         flex
+        flex-col
         justify-center
         items-center
       text-gray-50
@@ -28,7 +29,7 @@ export default function About() {
             xl:text-2xl
             text-center
             tracking-widest
-            font-allura
+            font-extrabold
             position:relative
             z-10
             text-zinc-100
