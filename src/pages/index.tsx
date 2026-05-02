@@ -26,8 +26,6 @@ export default function Home() {
       <Header />
       <UnderConstruction />
       <About />
-      <Missao />
-      <Filiados />
       <Footer />
     </main>
   )
