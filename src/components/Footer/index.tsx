@@ -50,17 +50,17 @@ export default function Footer() {
               </span>
             </div>
 
-            {/* <div className={`animate-wiggle`}>
+            <div className={`animate-wiggle`}>
               <span className={`text-green-600`}>
                 <Link
-                  href="https://wa.me/5581985998673"
+                  href="https://chat.whatsapp.com/L7rwDbldv9g57nvyyAjpv3"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <WhatsappLogo size={48} />
                 </Link>
               </span>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

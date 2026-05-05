@@ -1,8 +1,6 @@
 import About from "@/components/About"
-import { Filiados } from "@/components/Filiados"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
-import Missao from "@/components/Missao"
 import UnderConstruction from "@/components/UnderConstruction"
 import { Metadata } from "next"
 
