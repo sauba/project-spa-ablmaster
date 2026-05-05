@@ -1,6 +1,7 @@
 import {
   InstagramLogo,
   TrademarkRegistered,
+  WhatsappLogo
 } from "@phosphor-icons/react"
 import Link from "next/link"
 import Logo from "../Logo"
