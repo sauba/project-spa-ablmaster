@@ -32,6 +32,7 @@ export default function About() {
             z-10
             bg-black/40
             mx-2
+            xl:mb-2
             rounded-lg
           `}
       >
