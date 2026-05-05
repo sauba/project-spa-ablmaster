@@ -29,7 +29,7 @@ export default function About() {
             xl:text-2xl
             text-center
             tracking-widest
-            font-extrabold
+            font-thin
             position:relative
             z-10
             text-zinc-100
