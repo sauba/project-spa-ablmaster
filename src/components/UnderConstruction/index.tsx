@@ -5,7 +5,7 @@ export default function UnderConstruction() {
   return (
     <div
       className={`
-        bg-
+        bg-bg-abertura-filiados
         bg-cover
         bg-center
         w-full
@@ -20,20 +20,6 @@ export default function UnderConstruction() {
       id="under-construction"
     >
       <Image src={site_em_construcao} alt="" className={`w-6/12 lg:w-2/12 mx-auto`} priority />
-
-      <p
-        className={`
-            px-8
-            py-10
-            2xl:px-8
-            text-2xl
-            text-center
-            tracking-widest
-            font-pt-mono
-          `}
-      >
-        ABLM - Associação Brasileira de Longboard Master, uma entidade dedicada à promoção, desenvolvimento e valorização do surfe na modalidade longboard, com foco especial nos atletas da categoria master +35 anos.
-      </p>
     </div>
   )
 }

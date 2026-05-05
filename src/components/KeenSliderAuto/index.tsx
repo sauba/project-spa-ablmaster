@@ -1,11 +1,11 @@
-import img1 from "@/images/imgSlideAbordagem01.svg"
-import img2 from "@/images/imgSlideAbordagem02.svg"
-import img3 from "@/images/imgSlideAbordagem03.svg"
-import img4 from "@/images/imgSlideAbordagem04.svg"
-import img5 from "@/images/imgSlideAbordagem05.svg"
 import "keen-slider/keen-slider.min.css"
 import { useKeenSlider } from "keen-slider/react"
 import Image from "next/image"
+import img1 from "../../../public/ablmaster_01.svg"
+import img2 from "../../../public/ablmaster_02.svg"
+import img3 from "../../../public/ablmaster_03.svg"
+import img5 from "../../../public/circuito_2026_ablmaster.svg"
+import img4 from "../../../public/primeiro_circuito_ablmaster_2026.svg"
 
 const animation = { duration: 80000, easing: (t: number) => t }
 
@@ -37,8 +37,8 @@ export default function KeenSliderAuto() {
       <div className="keen-slider__slide number-slide1">
         <Image
           src={img1}
-          width={400}
-          height={400}
+          width={256}
+          height={256}
           alt=""
           priority
           className={`w-full rounded-3xl`}
@@ -47,8 +47,8 @@ export default function KeenSliderAuto() {
       <div className="keen-slider__slide number-slide2">
         <Image
           src={img2}
-          width={400}
-          height={400}
+          width={256}
+          height={256}
           alt=""
           priority
           className={`w-full rounded-3xl`}
@@ -57,8 +57,8 @@ export default function KeenSliderAuto() {
       <div className="keen-slider__slide number-slide3">
         <Image
           src={img3}
-          width={400}
-          height={400}
+          width={256}
+          height={256}
           alt=""
           priority
           className={`w-full rounded-3xl`}
@@ -67,8 +67,8 @@ export default function KeenSliderAuto() {
       <div className="keen-slider__slide number-slide4">
         <Image
           src={img4}
-          width={400}
-          height={400}
+          width={256}
+          height={256}
           alt=""
           priority
           className={`w-full rounded-3xl`}
@@ -77,8 +77,8 @@ export default function KeenSliderAuto() {
       <div className="keen-slider__slide number-slide5">
         <Image
           src={img5}
-          width={400}
-          height={400}
+          width={256}
+          height={256}
           alt=""
           priority
           className={`w-full rounded-3xl`}

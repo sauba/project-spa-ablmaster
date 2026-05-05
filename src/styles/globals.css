@@ -23,3 +23,178 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@import 'tailwindcss';
+
+/* =========================
+   THEME (substitui extend)
+========================= */
+@theme {
+  /* FONTES */
+  --font-gothamrounded-book: gothamrounded-book;
+  --font-gothamrounded-medium: gothamrounded-medium;
+  --font-snowdrop-regular: snowdrop-regular;
+  --font-allura: allura, cursive;
+  --font-athiti: athiti, sans-serif;
+  --font-bad-script: 'Bad Script', cursive;
+  --font-castoro-titling: 'Castoro Titling', cursive;
+  --font-caveat: Caveat, cursive;
+  --font-comforter: Comforter, cursive;
+  --font-david-libre: 'David Libre', serif;
+  --font-inspiration: inspiration, cursive;
+  --font-instrument-serif: 'Instrument Serif', serif;
+  --font-julius-sans-one: 'Julius Sans One', sans-serif;
+  --font-jura: jura, sans-serif;
+  --font-mate-sc: 'Mate SC', serif;
+  --font-meddon: Meddon, cursive;
+  --font-poiret-one: 'Poiret One', cursive;
+  --font-pt-mono: 'PT Mono', monospace;
+  --font-reenie-beanie: 'Reenie Beanie', cursive;
+  --font-shadows-into-light-two: 'Shadows Into Light Two', cursive;
+  --font-zeyada: Zeyada, cursive;
+  --font-arimo: Arimo, sans-serif;
+
+  /* ANIMAÇÕES */
+  --animate-spin-slow: spin 15s linear infinite;
+  --animate-ping-slow: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animate-ping-fast: ping 0.75s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animate-bounce-slow: bounce 2s infinite ease-in-out;
+  --animate-bounce-personal: bounce 0.5s cubic-bezier(0.07, 0.93, 0.93, 0.06)
+    infinite;
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  --animate-wiggle-stop: wiggle 3s ease-in-out;
+
+  --animate-wiggle-shrink: wiggle-shrink 6s ease-in-out infinite;
+  --animate-wiggle-shrink-slow: wiggle-shrink 9s ease-in-out infinite;
+
+  --animate-surf: surf 5s ease-in-out infinite;
+  --animate-surf-snap-left: surf-snap-left 2s ease-in-out infinite;
+  --animate-surf-snap-right: surf-snap-right 2s ease-in-out infinite;
+  --animate-surf-skew: surf-skew 3s ease-in-out infinite;
+  --animate-surf-inverted: surf-inverted 6s ease-in-out infinite;
+
+  --animate-skew: skew 5s ease-in-out infinite;
+  --animate-skew-stop: skew 0.5s ease-in-out;
+  --animate-skew-complete: skew-complete 2s ease-in-out infinite;
+
+  --animate-pulse-slow: pulse-custom 200s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-pulse-slow-stop: pulse-custom 5s cubic-bezier(0.4, 0, 0.6, 1);
+
+  /* BACKGROUNDS */
+  --background-image-bg-abertura-filiados: url('/bg_abertura_filiados.svg');
+  --background-image-bg-contato: url('/bg_contato.svg');
+  --background-image-bg-missao: url('/bg_missao.svg');
+  --background-image-bg-quem-somos: url('/bg_quem_somos.svg');
+  --background-image-bg-circuito-2026: url('/bg_circuito_2026.svg');
+
+  /* BREAKPOINTS */
+  --breakpoint-xs: 475px;
+  --breakpoint-3xl: 2048px;
+  --breakpoint-4xl: 4096px;
+}
+
+/* =========================
+   KEYFRAMES (agora no CSS)
+========================= */
+
+@keyframes pulse-custom {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes wiggle-shrink {
+  0%,
+  100% {
+    transform: rotateY(-90deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes surf {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes surf-snap-left {
+  0%,
+  100% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes surf-snap-right {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-3deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes surf-inverted {
+  0%,
+  100% {
+    transform: rotateY(-360deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes surf-skew {
+  0%,
+  100% {
+    transform: skewY(-15deg);
+  }
+  50% {
+    transform: skewY(15deg);
+  }
+}
+
+@keyframes skew {
+  0%,
+  100% {
+    transform: skew(-3deg);
+  }
+  50% {
+    transform: skew(180deg);
+  }
+}
+
+@keyframes skew-complete {
+  0%,
+  100% {
+    transform: skewY(-360deg);
+  }
+  50% {
+    transform: skewY(15deg);
+  }
+}
