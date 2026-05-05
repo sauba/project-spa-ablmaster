@@ -5,6 +5,7 @@ import {
 } from "@phosphor-icons/react"
 import Link from "next/link"
 import Logo from "../Logo"
+import WhatsappDropdown from "../WhatsappDropdown"
 
 export default function Footer() {
   return (
@@ -12,6 +13,7 @@ export default function Footer() {
       className={`w-full bg-contato justify-center items-center text-center min-h-screen`}
       id="contato"
     >
+      <WhatsappDropdown />
       <div
         className={`flex w-full justify-center items-center text-center text-red-50 min-h-screen gap-10`}
       >
