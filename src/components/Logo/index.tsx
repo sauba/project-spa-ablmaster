@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import logo from "../../../public/ablmaster_01.svg"
+import logo from "../../../public/logo.svg"
 
 export default function Logo() {
   return (

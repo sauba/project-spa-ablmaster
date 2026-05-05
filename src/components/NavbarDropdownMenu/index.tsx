@@ -1,6 +1,8 @@
 import { Menu, Transition } from "@headlessui/react"
-import { ListBullets } from "@phosphor-icons/react"
+// import { ListBullets } from "@phosphor-icons/react"
+import Image from "next/image"
 import { Fragment } from "react"
+import logo from "../../../public/logo.svg"
 
 export default function NavbarDropdownMenu() {
   return (
@@ -9,12 +11,13 @@ export default function NavbarDropdownMenu() {
         {({ open }) => (
           <Fragment>
             <Menu.Button className="inline-flex justify-items-start rounded-md text-red-50 border-none outline-none">
-              <ListBullets
+              <Image src={logo} alt="Logo" className={`w-16 h-16 m-4 hover:cursor-pointer`} />
+              {/* <ListBullets
                 size={72}
                 weight="thin"
                 color="white"
                 className={`py-4`}
-              />
+              /> */}
             </Menu.Button>
 
             {/* Menu Items */}
@@ -27,7 +30,7 @@ export default function NavbarDropdownMenu() {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Menu.Items className="origin-top-left absolute left-0 w-72 rounded-md bg-transparent">
+              <Menu.Items className="origin-top-left absolute left-0 w-72 rounded-md bg-transparent outline-none border-none">
                 <div className="flex-col justify-start items-start">
                   <Menu.Item>
                     {({ active }) => (
